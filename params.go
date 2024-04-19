@@ -10,13 +10,13 @@ package pvss
 
 import (
 	"crypto/elliptic"
-	"github.com/stars-labs/go-pvss/crypto/secp256k1"
+	"github.com/ethereum/go-ethereum/crypto/secp256k1"
 	"math/big"
 )
 
 var (
-	secp256k1N                = new(big.Int).Set(secp256k1.S256().N)
 	theCurve   elliptic.Curve = secp256k1.S256()
+	secp256k1N                = new(big.Int).Set(theCurve.Params().N)
 )
 
 var (
