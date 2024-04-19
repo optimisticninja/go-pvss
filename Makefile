@@ -1,5 +1,5 @@
 
 test:
-	go test ./...
+	go test -v ./...
 benchmark:
-	go test ./pvss -bench=. -benchmem
+	go test -v ./ -bench=. -benchmem

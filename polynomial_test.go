@@ -10,7 +10,7 @@ package pvss
 
 import (
 	"crypto/rand"
-	"github.com/stars-labs/go-pvss/crypto/secp256k1"
+	"github.com/ethereum/go-ethereum/crypto/secp256k1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"math/big"
